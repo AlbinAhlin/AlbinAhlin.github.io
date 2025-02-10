@@ -1,10 +1,53 @@
 <!DOCTYPE html>
+<nav>
+   <pre>
+   <a href= "index.html" style="color: white;">hemsidan</a>
+   <a href= "andrasidan.html" style="color: white;">sida 2</a>
+   <a href="tredjesidan.html">sida 3</a>
+   <a href="fjärdesidan.html">sida 4</a>
+</pre>
+</nav>
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+ height:50px;
+ justify-content: center;
+}
+
+a{
+   position: relative;
+   cursor: pointer;
+   color: #efefee;
+   font-size: 28px;
+   padding: 0.5rem 1rem;
+   transition: color 0,25s;
+}
+a::after{
+   position: absolute;
+   content:"";
+   inset: 0;
+   background: white;
+   scale:1 0;
+   z-index:-1;
+   transition:0,45s;
+   border-radius: 10px;
+}
+
+a:hover {
+   color: black;
+
+}
+a:hover::after {
+   scale:1 1;
+}
 <center> <h1 style="color: yellow;"> det här är världens bästa websida <hr style="color: yellow;">
 </h1></center>
 
    <body style="background-color: rgb(0, 0, 0);">
 <center><img src="r9.webp" alt="r9" width="200" height="250"></center> <hr style="color: yellow;">
- <center> <button type="button" onclick="alert('hallå där!')" style="border: 5px; background-color: yellow;">tryck på mig!</button></center>
+ <center> <button type="button" onclick="alert('hallå där!')" style="border: 5px; background-color: yellow; width: 65px;;">tryck på mig!</button></center>
  <p style="color: rgb(201, 227, 30);"> Detta är den första av många framgångsrika websidor <br> av Albin Ahlin </p>
  <hr style="color: yellow;">
  <p><a href="andrasidan.html" style="font-size: x-large;"> Gå till andrasidan här!</a></p>
