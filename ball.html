@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick Up the Ball</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: orange;
+            border-radius: 50%; 
+            border: 3px solid black; 
+            position: absolute;
+            animation: bounce 1s infinite alternate;
+            cursor: pointer;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-30px);
+            }
+        }
+
+        .picked-up {
+            animation: none;
+        }
+    </style>
+</head>
+<body style="background-color: darkblue;">
+<h1>Play with the ball</h1>
+<hr>
+    <div class="ball"></div>
+
+    <script>
+        const ball = document.querySelector('.ball');
+        let isDragging = false;
+
+        ball.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            ball.classList.add('picked-up'); // Remove bounce animation when picked up
+            const offsetX = e.clientX - ball.offsetLeft;
+            const offsetY = e.clientY - ball.offsetTop;
+
+            function dragBall(e) {
+                if (isDragging) {
+                    ball.style.left = `${e.clientX - offsetX}px`;
+                    ball.style.top = `${e.clientY - offsetY}px`;
+                }
+            }
+
+            function stopDrag() {
+                isDragging = false;
+                ball.classList.remove('picked-up'); // Add bounce animation back
+                document.removeEventListener('mousemove', dragBall);
+                document.removeEventListener('mouseup', stopDrag);
+            }
+
+            document.addEventListener('mousemove', dragBall);
+            document.addEventListener('mouseup', stopDrag);
+        });
+    </script>
+
+</body>
+</html>

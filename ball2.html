@@ -1,0 +1,108 @@
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #e0e0e0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .ball {
+        width: 50px;
+        height: 50px;
+        background-color: #ff6347;
+        border-radius: 50%;
+        position: absolute;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div class="ball"></div>
+
+<script>
+    const ball = document.querySelector('.ball');
+    const gravity = 0.3; // Gravity force
+    const friction = 0.95; // Friction when the ball is not grabbed
+    const damping = 0.8; // Damping effect on the ball when dragging
+    let isDragging = false;
+    let offsetX, offsetY;
+    let velocityX = 0, velocityY = 0;
+    let posX = 200, posY = 200;
+
+    // Set initial position
+    ball.style.left = `${posX}px`;
+    ball.style.top = `${posY}px`;
+
+    ball.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        offsetX = e.clientX - posX;
+        offsetY = e.clientY - posY;
+        velocityX = 0; // Stop any existing movement when grabbing the ball
+        velocityY = 0;
+    });
+
+    document.addEventListener('mousemove', (e) => {
+        if (isDragging) {
+            posX = e.clientX - offsetX;
+            posY = e.clientY - offsetY;
+            velocityX = 0;
+            velocityY = 0; // Stop velocity when dragging
+            updateBallPosition();
+        }
+    });
+
+    document.addEventListener('mouseup', () => {
+        isDragging = false;
+    });
+
+    function updateBallPosition() {
+        ball.style.left = `${posX}px`;
+        ball.style.top = `${posY}px`;
+    }
+
+    function applyPhysics() {
+        if (!isDragging) {
+            // Apply gravity
+            velocityY += gravity;
+
+            // Apply friction
+            velocityX *= friction;
+            velocityY *= friction;
+
+            // Update position with velocity
+            posX += velocityX;
+            posY += velocityY;
+
+            // Prevent the ball from going off-screen
+            if (posX < 0) {
+                posX = 0;
+                velocityX *= -1;
+            } else if (posX > window.innerWidth - 50) {
+                posX = window.innerWidth - 50;
+                velocityX *= -1;
+            }
+
+            if (posY < 0) {
+                posY = 0;
+                velocityY *= -1;
+            } else if (posY > window.innerHeight - 50) {
+                posY = window.innerHeight - 50;
+                velocityY *= -1;
+            }
+
+            updateBallPosition();
+        }
+
+        // Keep updating the position with physics
+        requestAnimationFrame(applyPhysics);
+    }
+
+    // Start the physics loop
+    applyPhysics();
+</script>

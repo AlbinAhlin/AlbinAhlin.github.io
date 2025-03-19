@@ -1,0 +1,113 @@
+<style>
+    body {
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .stick-figure {
+        position: relative;
+        width: 100px;
+        height: 200px;
+    }
+
+    /* Head */
+    .head {
+        position: absolute;
+        top: 0;
+        left: 25px;
+        width: 50px;
+        height: 50px;
+        background-color: #ffcc66;
+        border-radius: 50%;
+    }
+
+    /* Body */
+    .body {
+        position: absolute;
+        top: 60px;
+        left: 40px;
+        width: 20px;
+        height: 70px;
+        background-color: #333;
+    }
+
+    /* Arms */
+    .left-arm, .right-arm {
+        position: absolute;
+        top: 80px;
+        width: 50px;
+        height: 10px;
+        background-color: #333;
+    }
+    .left-arm {
+        left: -10px;
+        transform-origin: right center;
+        animation: swing-arm 1s infinite alternate;
+    }
+    .right-arm {
+        right: -10px;
+        transform-origin: left center;
+        animation: swing-arm 1s infinite alternate-reverse;
+    }
+
+    /* Legs */
+    .left-leg, .right-leg {
+        position: absolute;
+        top: 130px;
+        width: 20px;
+        height: 60px;
+        background-color: #333;
+    }
+
+    .left-leg {
+        left: 20px;
+        animation: walk-left-leg 1s infinite alternate;
+    }
+
+    .right-leg {
+        left: 60px;
+        animation: walk-right-leg 1s infinite alternate;
+    }
+
+    @keyframes swing-arm {
+        0% {
+            transform: rotate(-45deg);
+        }
+        100% {
+            transform: rotate(45deg);
+        }
+    }
+
+    @keyframes walk-left-leg {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(-30deg);
+        }
+    }
+
+    @keyframes walk-right-leg {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(30deg);
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="stick-figure">
+    <div class="head"></div>
+    <div class="body"></div>
+    <div class="left-arm"></div>
+    <div class="right-arm"></div>
+    <div class="left-leg"></div>
+    <div class="right-leg"></div>
+</div>
