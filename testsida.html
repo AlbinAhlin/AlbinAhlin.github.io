@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+          
+        justify-content: center;
+          height: 100vh;
+          
+      }
+
+      .animated-button {
+          margin: auto;
+        padding: 15px 30px;
+          font-size: 16px;
+          border: none;
+          border-radius: 5px;
+          cursor: wait ;
+          transition: transform 0.2s, background-color 0.2s;
+      }
+
+      .animated-button:active {
+          transform: scale(1.4);
+          
+      }
+
+      .animated {
+          animation: pulse 1.0s forwards;
+      }
+
+      @keyframes pulse {
+          0% {
+              transform: scale(1);
+          }
+          50% {
+              transform: scale(1.1);
+          }
+          100% {
+              transform: scale(1);
+          }
+      }
+  </style>
+<style>
+.bordertest {
+color: darkmagenta;
+background-color: plum ;
+border: 16px outset purple;  
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+border-radius: 10%;
+text-align: center;
+margin: 25px;
+}
+</style>
+
+
+<style>
+table, th, td {
+border: 5px solid black;
+justify-content: center;
+
+}
+</style>
+<style>
+ table {
+ height: 300px; 
+ } 
+</style>
+<style>
+body {
+  background-color: gray;
+}
+
+body {
+  background-color: gray;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: purple;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: plum;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: gray;
+    text-transform: none ;
+  }
+}
+
+</style>
+<style>
+button {
+background-color: red; 
+border-radius: 200%;
+height: 300px;
+width: 300px;
+border: 5px solid black;
+font-size: 100px;
+}
+</style>
+</head>
+<body>
+  <center> <div class="bordertest"><h1>Hallå</h1></div> </center>
+ 
+ <br> <br>
+   <table>
+<th>Namn</th>
+<th>Nummer</th>
+<th>Vikt vid födsel (g)</th>
+<th>Längd på navelsträng</th>
+<th>Längd på stortå</th>
+<th>Omgångar av Squid game du hade överlevt</th>
+<tr>
+ <td>Albin</td> 
+ <td>001</td>
+ <td>5000g</td>
+ <td>4 meter</td>
+ <td>0,10 meter</td>
+ <td>Alla</td>
+</tr>
+<tr>
+  <td>Theodor</td>
+  <td>237</td>
+  <td>3000g</td>
+  <td>3,9 meter</td>
+  <td>0,07 meter</td>
+  <td>Alla utom mingle</td>
+</tr>
+   </table>
+   
+   <center><button id="animateButton">Tryck!</button></center>
+   
+   <script>
+    const button = document.getElementById('animateButton');
+
+    button.addEventListener('click', function() {
+    
+        button.classList.add('animated');
+
+        
+        setTimeout(() => {
+            button.classList.remove('animated');
+        }, 500); 
+    });
+</script>
+</body>
+</html>
