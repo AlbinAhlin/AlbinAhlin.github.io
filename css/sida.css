@@ -1,0 +1,45 @@
+
+
+.varukorg {
+height: 65px;
+width: 65px; 
+position: absolute;right: 25px;top: 25px; 
+border-radius: 20%;
+}
+.logo {
+height: 100px;   
+width: 100px; 
+
+}
+
+.navlink1 {
+position: absolute;top: 15px;left: 120px;
+font-size: 20px;
+color: white;
+}
+.navlink2 {
+    position: absolute;top: 15px;left: 230px;
+    font-size: 20px;
+    color: white;
+    }
+    .navlink3 {
+        position: absolute;top: 15px;left: 370px;
+        font-size: 20px;
+        color: white;
+        }
+        .navlink4 {
+            position: absolute;top: 15px;left: 470px;
+            font-size: 20px;
+            color: white;
+            }
+            
+            .cart {
+            height: 35px;
+            width: 35px;
+            }
+
+.rubrik { 
+font-size: 50px;
+font-family: cursive;
+text-shadow: 0px 4px 100px black;
+}
