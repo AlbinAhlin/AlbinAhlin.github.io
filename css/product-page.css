@@ -24,7 +24,7 @@ grid-template-rows: 200px 200px 200px 200px 200px 200px 200px ;
     }
     
     .navlink1 {
-    position: absolute;top: 15px;left: 550px;
+    position: absolute;top: 15px;left: 520px;
     font-size: 30px;
     color: white;
     }
@@ -52,18 +52,18 @@ grid-template-rows: 200px 200px 200px 200px 200px 200px 200px ;
     grid-row-end: 5;
     height: 600px; 
     width: 700px;
-     
-    }
-    .productimg1 img {
+     }
+    
+     .productimg1 img {
         grid-column-start: 1; 
         grid-column-end: 5; 
         grid-row-start: 2; 
         grid-row-end: 5;
         height: 600px; 
         width: 700px;
-        
-    }
-.buttonmenu{
+        }
+
+        .buttonmenu{
     grid-column-start: 3; 
     grid-column-end: 5; 
     grid-row-start: 2; 
@@ -74,30 +74,31 @@ grid-template-rows: 200px 200px 200px 200px 200px 200px 200px ;
     padding: 50px;
     padding-top: 1px;
 }
+
 .buttonmenu button{
+ border: 3px solid white; 
+ border-radius: 10%; 
+ margin-top: 30px;
+height: 70px;
+width: 250px;
+text-align: center;
+background-color: green;  
+ color: white;
     
-    border: 3px solid white; 
-    border-radius: 10%; 
-    margin-top: 30px;
-    height: 70px;
-    width: 250px;
-    text-align: center;
-    background-color: green;
-    color: white;
+}
     
-    }
     .buttonmenu h1{
-        
-        background-color: lightgray;
-        border-radius: 3%;
-        text-align: center;
-        padding: 1px;
-        font-family: cursive;
+    background-color: lightgray;
+    border-radius: 3%;
+    text-align: center;
+    padding: 1px;
+    font-family: cursive;
     }
 
     .buttonmenu button {
     margin-top: 80px;   
     }
+    
     .menutext {
         grid-column-start: 5; 
         grid-column-end: 6; 
