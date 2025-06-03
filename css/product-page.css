@@ -1,6 +1,6 @@
 .gridcontainer2 {
 display: grid;
-grid-template-columns: 350px 350px 350px 350px; 
+grid-template-columns: 300px 250px auto 200px; 
 grid-template-rows: 200px 200px 200px 200px 200px 200px 200px ;   
 }
 .navbar {
@@ -60,7 +60,7 @@ grid-template-rows: 200px 200px 200px 200px 200px 200px 200px ;
         grid-row-start: 2; 
         grid-row-end: 5;
         height: 600px; 
-        width: 700px;
+        width: 600px;
         }
 
         .buttonmenu{
@@ -84,6 +84,7 @@ width: 250px;
 text-align: center;
 background-color: green;  
  color: white;
+ 
     
 }
     
@@ -96,7 +97,8 @@ background-color: green;
     }
 
     .buttonmenu button {
-    margin-top: 80px;   
+    margin-top: 80px; 
+    
     }
     
     .menutext {
@@ -113,6 +115,8 @@ background-color: green;
     width: 50px;    
     height: 50px;
     margin: 5px;
+    margin-top: 20px;
+    
     }
     
     .packer {
@@ -122,6 +126,7 @@ background-color: green;
         grid-row-end: 2;  
         text-align: center;
         margin-top: 140px;
+        
         
     }
     .menutext p {

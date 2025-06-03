@@ -8,11 +8,13 @@
     
     .navbar {
     grid-column-start: 1;    
-    grid-column-end: 6;
+    grid-column-end: 8;
     grid-row-start: 1;
     grid-row-end: 2;
     background-color: green;
+    height: 100px;
     }
+    
     .rubrik {
     grid-column-start: 2; 
     grid-column-end: 5; 
@@ -276,7 +278,7 @@ border: 5px solid black;
                 }
                 .gridcontainer2 {
                 display: grid;
-                grid-template-rows: 400px 400px 400px 400px 400px 400px 400px;
+                grid-template-rows: 400px 400px 400px 400px 400px ;
                 grid-template-columns:auto 400px auto 400px auto 400px auto 
                  }
 
@@ -287,6 +289,7 @@ grid-row-end: 1;
 grid-column-start: 4; 
 grid-column-end: 4; 
 font-size: 50px; 
+margin-top: 20px;
 }
 .img5 {
     grid-row-start: 2; 
