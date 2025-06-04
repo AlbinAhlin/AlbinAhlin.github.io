@@ -1,4 +1,8 @@
 
+body {
+background-image: url(https://t3.ftcdn.net/jpg/00/92/63/82/360_F_92638243_9mMQdxn8Q2wvC067We8uO7YpaARrpazo.jpg);
+}
+
 .gridcontainer-cart {
 display: grid;
 grid-template-columns: 33% 33% 33% ;  
@@ -12,6 +16,7 @@ grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px ;
     grid-row-end: 2;
     background-color: green;
     height: 50px;
+    position: sticky;top: 0px;
     }
     .navlink1 {
         position: absolute;top: 15px;left: 100px;
@@ -30,7 +35,7 @@ grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px ;
                 } 
                         .logo {
                         height: 50px;   
-                        width: 70px; 
+                        width: 50px; 
                         
                         }
 .cart-items {
@@ -40,11 +45,10 @@ grid-row-start: 2;
 grid-row-end: 7;
 background-color: lightgray;
 border-radius: 20%;
+border: 3px solid gray;
+text-align: center;
 }  
-.muller {
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 7;
-    height: 2px;
-}                      
+.cart-items h2 {
+text-decoration: underline;
+}
+                    

@@ -13,6 +13,7 @@
     grid-row-end: 2;
     background-color: green;
     height: 100px;
+    position: sticky;top: 0px;
     }
     
     .rubrik {
@@ -290,6 +291,7 @@ grid-column-start: 4;
 grid-column-end: 4; 
 font-size: 50px; 
 margin-top: 20px;
+color: white;
 }
 .img5 {
     grid-row-start: 2; 
@@ -305,6 +307,7 @@ margin-top: 20px;
       margin-top: 20px;
       border-radius: 20%;
       box-shadow: 2px 1px 12px black; 
+      background-color: white;
       }
 .imgtxt5 {
     grid-row-start: 3; 
@@ -312,6 +315,7 @@ margin-top: 20px;
     grid-column-start: 2; 
     grid-column-end: 3; 
     text-align: center; 
+    color: white;
 }
 .img6 {
     grid-row-start: 2; 
@@ -327,6 +331,7 @@ margin-top: 20px;
       margin-top: 20px;
       border-radius: 20%;
       box-shadow: 2px 1px 12px black; 
+      background-color: white;
 }
 .imgtxt6 {
     grid-row-start: 3; 
@@ -334,6 +339,7 @@ margin-top: 20px;
     grid-column-start: 4; 
     grid-column-end: 4; 
     text-align: center; 
+    color: white;
 }
 .img7 {
     grid-row-start: 2; 
@@ -349,6 +355,7 @@ margin-top: 20px;
             margin-top: 20px;
             border-radius: 20%;
             box-shadow: 2px 1px 12px black; 
+            background-color: white;
 }
 .imgtxt7 {
     grid-row-start: 3; 
@@ -356,6 +363,7 @@ margin-top: 20px;
     grid-column-start: 6; 
     grid-column-end: 6; 
     text-align: center; 
+    color: white;
 }
 .img8 {
     grid-row-start: 4; 
@@ -371,6 +379,7 @@ margin-top: 20px;
             margin-top: 20px;
             border-radius: 20%;
             box-shadow: 2px 1px 12px black; 
+            background-color: white;
 }
 .img9 {
     grid-row-start: 4; 
@@ -386,6 +395,7 @@ margin-top: 20px;
             margin-top: 20px;
             border-radius: 20%;
             box-shadow: 2px 1px 12px black; 
+            background-color: white;
 }
 .img10 {
     grid-row-start: 4; 
@@ -401,6 +411,7 @@ margin-top: 20px;
             margin-top: 20px;
             border-radius: 20%;
             box-shadow: 2px 1px 12px black; 
+            background-color: white;
 }
 .button5 {
     grid-row-start: 3; 
@@ -409,7 +420,7 @@ margin-top: 20px;
     grid-column-end: 2;
     color: white;
     background-color: green;
-    border: 2px solid black; 
+    border: 2px solid white; 
     border-radius: 19%;
     height: 50px;
     width: 100px;
@@ -423,7 +434,7 @@ margin-top: 20px;
         grid-column-end: 4;
         color: white;
         background-color: green;
-        border: 2px solid black; 
+        border: 2px solid white; 
         border-radius: 19%;
         height: 50px;
         width: 100px;
@@ -437,7 +448,7 @@ margin-top: 20px;
             grid-column-end: 6sssss;
             color: white;
             background-color: green;
-            border: 2px solid black; 
+            border: 2px solid white; 
             border-radius: 19%;
             height: 50px;
             width: 100px;
@@ -451,7 +462,7 @@ margin-top: 20px;
                 grid-column-end: 2;
                 color: white;
                 background-color: green;
-                border: 2px solid black; 
+                border: 2px solid white; 
                 border-radius: 19%;
                 height: 50px;
                 width: 100px;
@@ -465,7 +476,7 @@ margin-top: 20px;
                     grid-column-end: 4;
                     color: white;
                     background-color: green;
-                    border: 2px solid black; 
+                    border: 2px solid white; 
                     border-radius: 19%;
                     height: 50px;
                     width: 100px;
@@ -479,7 +490,7 @@ margin-top: 20px;
                         grid-column-end: 6;
                         color: white;
                         background-color: green;
-                        border: 2px solid black; 
+                        border: 2px solid white; 
                         border-radius: 19%;
                         height: 50px;
                         width: 100px;
@@ -492,6 +503,7 @@ margin-top: 20px;
                             grid-column-start: 2; 
                             grid-column-end: 2; 
                             text-align: center; 
+                            color: white;
                          }
                          .imgtxt9 {
                             grid-row-start: 5; 
@@ -499,6 +511,7 @@ margin-top: 20px;
                             grid-column-start: 4; 
                             grid-column-end: 4; 
                             text-align: center; 
+                            color: white;
                          }
                          .imgtxt10 {
                             grid-row-start: 5; 
@@ -506,6 +519,7 @@ margin-top: 20px;
                             grid-column-start: 6; 
                             grid-column-end: 6; 
                             text-align: center; 
+                            color: white;
                          }
                          h2 {
                          color: black;
@@ -514,4 +528,8 @@ margin-top: 20px;
                          a {
                          text-decoration: none;   
                          }
+
+.bodyp {
+background-image: url(https://t3.ftcdn.net/jpg/02/49/68/72/360_F_249687268_Yl4AswCdwBQS7NA6hczKq0pfnjQs02UP.jpg);    
+}                         
                          

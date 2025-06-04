@@ -1,0 +1,87 @@
+body {
+background-image: url(https://t3.ftcdn.net/jpg/00/92/63/82/360_F_92638243_9mMQdxn8Q2wvC067We8uO7YpaARrpazo.jpg);
+ ;   
+}
+.gridcontainer-kontakt {
+    display: grid;
+    grid-template-columns: 33% 33% 33% ;  
+    grid-template-rows: 100px 100px 100px 100px 100px   ;     
+}
+.navbar {
+    grid-column-start: 1;    
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: green;
+    height: 100px;
+    position: sticky;top: 0px;
+    }
+    .varukorg {
+        height: 65px;
+        width: 65px; 
+        position: absolute;right: 25px;top: 25px; 
+        border-radius: 20%;
+        }
+        .logo {
+        height: 100px;   
+        width: 100px; 
+        
+        }
+        .cart {
+            height: 35px;
+            width: 35px;
+            }
+        
+        .navlink1 {
+        position: absolute;top: 15px;left: 120px;
+        font-size: 20px;
+        color: white;
+        }
+        .navlink2 {
+            position: absolute;top: 15px;left: 180px;
+            font-size: 20px;
+            color: white;
+            }
+            .navlink3 {
+                position: absolute;top: 15px;left: 280px;
+                font-size: 20px;
+                color: white;
+                } 
+.holder1 {
+    grid-column-start: 1;    
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    background-color: green;
+    margin-left: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: 3px solid white;
+}
+.holder2 {
+    grid-column-start: 2;    
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    background-color: green;
+    border-radius: 10px;
+    text-align: center;
+    border: 3px solid white;
+
+}
+.holder3 {
+    grid-column-start: 3;    
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    background-color: green;
+    margin-right: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: 3px solid white;
+}
+table {
+padding: 20px;  
+}

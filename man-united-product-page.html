@@ -19,18 +19,45 @@
     </div>
 
 
-    <div class="productimg1"><img src="images/man u 2008 shirt.png" alt="manchester united">  </div> 
+    <div class="productimg1"><img id="demo" src="images/man u 2008 shirt.png" alt="manchester united">  </div> 
 <div class="buttonmenu"><h1>Manchester United 07/08</h1><h3>399kr</h3> 
    
     <button  type="button" onclick="alert('Tillagd i varukorg!')"><h2>Lägg till i varukorg</h2></button>
 </div>
 <div class="packer">
-    <button class="productsize">XS</button>
-    <button class="productsize">S</button>
-    <button class="productsize">M</button>
-    <button class="productsize">L</button>
-    <button class="productsize">XL</button>
+    <button onclick="myFunction1()" class="productsize">XS</button>
+    <button onclick="myFunction2()" class="productsize">S</button>
+    <button onclick="myFunction3()" class="productsize">M</button>
+    <button onclick="myFunction4()" class="productsize">L</button>
+    <button onclick="myFunction5()" class="productsize">XL</button>
    </div> 
+
+   
+
+<script>
+function myFunction1() {
+  document.getElementById("demo").style.width ="100px";
+  document.getElementById("demo").style.height ="100px";        
+}
+function myFunction2() {
+  document.getElementById("demo").style.width ="200px";
+  document.getElementById("demo").style.height ="200px";        
+}
+function myFunction3() {
+  document.getElementById("demo").style.width ="300px";
+  document.getElementById("demo").style.height ="300px";        
+}
+function myFunction4() {
+  document.getElementById("demo").style.width ="400px";
+  document.getElementById("demo").style.height ="400px";        
+}
+function myFunction5() {
+  document.getElementById("demo").style.width ="500px";
+  document.getElementById("demo").style.height ="500px";        
+}
+</script>
+
+
 
 <div class="menutext"><pre><p>     <b><h3>Manchester United 2007/2008 Homekit</h3></b>
 

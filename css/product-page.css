@@ -1,49 +1,51 @@
 .gridcontainer2 {
 display: grid;
 grid-template-columns: 300px 250px auto 200px; 
-grid-template-rows: 200px 200px 200px 200px 200px 200px 200px ;   
+grid-template-rows: 100px 200px 200px 200px  ;   
 }
 .navbar {
     grid-column-start: 1; 
     grid-column-end: 6; 
     grid-row-start: 1; 
     grid-row-end: 1; 
-    background-color: green;   
+    background-color: green; 
+    position: sticky;top: 0px;
+    
 }
 
 .varukorg {
-    height: 100px;
-    width: 100px; 
+    height: 75px;
+    width: 75px; 
     position: absolute;right: 25px;top: 25px; 
     border-radius: 20%;
     }
     .logo {
-    height: 200px;   
-    width: 200px; 
+    height: 100px;   
+    width: 100px; 
     
     }
     
     .navlink1 {
-    position: absolute;top: 15px;left: 520px;
-    font-size: 30px;
+    position: absolute;top: 15px;left: 300px;
+    font-size: 20px;
     color: white;
     }
     .navlink2 {
-        position: absolute;top: 15px;left: 350px;
-        font-size: 30px;
+        position: absolute;top: 15px;left: 200px;
+        font-size: 20px;
         color: white;
         }
         .navlink3 {
-            position: absolute;top: 15px;left: 250px;
-            font-size: 30px;
+            position: absolute;top: 15px;left: 130px;
+            font-size: 20px;
             color: white;
             }
         
                 
                 
                 .cart {
-                height: 55px;
-                width: 55px;
+                height: 35px;
+                width: 35px;
                 }
 .productimg1 {
     grid-column-start: 1; 

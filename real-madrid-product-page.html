@@ -4,10 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<link rel="stylesheet" href="css/sida.css">
+<link rel="stylesheet" href="css/product-page.css">
 
 </head>
 <body>
+<div class="gridcontainer2">
+    <div class="navbar">
+        <img src="images/webshoplogo.png" alt="logo" class="logo">
+        <a href="index.html" class="navlink3">Hem</a> 
+        <a href="produkter.html" class="navlink2">Produkter</a> 
+        <a href="kontakt.html" class="navlink1">Kontakta oss</a>
+       
+       <a href="cart.html"><button class="varukorg"><img src="images/shopping-cart.png" alt="a" class="cart"></button></a>
+    </div>
 
+
+    <div class="productimg1"><img id="demo" src="images/real madrid shirt.webp" alt="manchester united">  </div> 
+<div class="buttonmenu"><h1>Real Madrid 23/24</h1><h3>399kr</h3> 
+   
+    <button  type="button" onclick="alert('Tillagd i varukorg!')"><h2>Lägg till i varukorg</h2></button>
+</div>
+<div class="packer">
+    <button onclick="myFunction1()" class="productsize">XS</button>
+    <button onclick="myFunction2()" class="productsize">S</button>
+    <button onclick="myFunction3()" class="productsize">M</button>
+    <button onclick="myFunction4()" class="productsize">L</button>
+    <button onclick="myFunction5()" class="productsize">12XL</button>
+   </div> 
+   <script>
+    function myFunction1() {
+      document.getElementById("demo").style.width ="100px";
+      document.getElementById("demo").style.height ="100px";        
+    }
+    function myFunction2() {
+      document.getElementById("demo").style.width ="200px";
+      document.getElementById("demo").style.height ="200px";        
+    }
+    function myFunction3() {
+      document.getElementById("demo").style.width ="300px";
+      document.getElementById("demo").style.height ="300px";        
+    }
+    function myFunction4() {
+      document.getElementById("demo").style.width ="400px";
+      document.getElementById("demo").style.height ="400px";        
+    }
+    function myFunction5() {
+      document.getElementById("demo").style.width ="500px";
+      document.getElementById("demo").style.height ="500px";        
+    }
+    </script>
+
+<div class="menutext"><pre><p>     <b><h3>Real Madrid 23/24</h3></b>
+
+
+    <b>Produktdetaljer:</b>
+    
+    *Färg: Vit/Guld
+    
+    *Material: 99% polyester 1% H<sub>2</sub>CO<sub>3</sub>
+    
+    *Sponsor: Emirates
+    
+    *Passform: Regular fit
+    
+    *Storlekar: S, M, L, XL, 12XL
+    
+  
+    <b> Vad ingår efter köpet:</b>
+    
+    *Tröjan levereras i förpackning 
+    
+    *Fri frakt vid köp över 500 SEK.
+    
+    *En fet kebabbrulle </p>
+
+</pre></div>
+
+
+
+</div>
 </body>
 </html>
